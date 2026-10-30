@@ -3,17 +3,146 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nossa Caixinha</title>
+  <title>Nossa Caixinha · Despesas pelo cupom fiscal</title>
+  <meta name="description" content="Aponte a câmera para o QR Code do cupom fiscal e veja para onde vai o seu dinheiro. Divida contas com quem mora ou viaja com você.">
+  <link rel="icon" href="icone.svg" type="image/svg+xml">
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<main>
-  <h1>Nossa Caixinha</h1>
-  <p>Despesas a partir do QR Code do cupom fiscal, com caixinhas para dividir as contas com quem você quiser.</p>
-  <ul>
-    <li><a href="privacidade.html">Política de privacidade</a></li>
-    <li><a href="excluir-conta.html">Excluir sua conta</a></li>
-  </ul>
+<header class="topo">
+  <a class="marca" href="./"><img src="icone.svg" alt="" width="36" height="36"> Nossa Caixinha</a>
+  <nav>
+    <a href="#recursos">Recursos</a>
+    <a href="privacidade.html">Privacidade</a>
+  </nav>
+</header>
+
+<section class="vitrine">
+  <div class="vitrine-texto">
+    <span class="selo">Em breve na Google Play e na App Store</span>
+    <h1>Para onde vai o seu dinheiro, direto do cupom fiscal.</h1>
+    <p>Aponte a câmera para o QR Code do cupom e o Nossa Caixinha lança a compra com todos os itens, já
+      separados por categoria. E divide as contas com quem mora ou viaja com você.</p>
+    <ul class="destaques">
+      <li>Sem cadastro</li>
+      <li>Sem anúncios</li>
+      <li>Grátis</li>
+    </ul>
+  </div>
+
+  <div class="celular" aria-hidden="true">
+    <div class="tela">
+      <div class="tela-topo">
+        <span class="tela-caixinha">Casa ▾</span>
+        <span class="tela-mes">Outubro de 2026</span>
+        <strong class="tela-total">R$ 2.347,80</strong>
+        <div class="barra">
+          <i style="--p:42%; --c:#2E9E5B"></i><i style="--p:24%; --c:#3B7DD8"></i><i style="--p:16%; --c:#E69A28"></i><i style="--p:10%; --c:#B456C8"></i><i style="--p:8%; --c:#1BA3A3"></i>
+        </div>
+      </div>
+      <ul class="tela-lista">
+        <li><i style="--c:#2E9E5B"></i><span>Mercado do Bairro<small>Mercado · 23 itens</small></span><b>R$ 412,37</b></li>
+        <li><i style="--c:#3B7DD8"></i><span>Aluguel<small>Moradia · fixa</small></span><b>R$ 1.200,00</b></li>
+        <li><i style="--c:#E69A28"></i><span>Padaria Pão Quente<small>Alimentação · 4 itens</small></span><b>R$ 38,90</b></li>
+        <li><i style="--c:#B456C8"></i><span>Farmácia Central<small>Saúde · 2 itens</small></span><b>R$ 64,15</b></li>
+        <li><i style="--c:#1BA3A3"></i><span>Internet<small>Contas · fixa</small></span><b>R$ 99,90</b></li>
+      </ul>
+      <div class="tela-botao">Ler cupom</div>
+    </div>
+  </div>
+</section>
+
+<main class="conteudo">
+  <section class="passos">
+    <h2>Do caixa ao gráfico em segundos</h2>
+    <ol>
+      <li><b>1</b><h3>Aponte</h3><p>A câmera lê o QR Code impresso no cupom fiscal (NFC-e).</p></li>
+      <li><b>2</b><h3>Confira</h3><p>A compra chega da SEFAZ com cada item, preço e categoria.</p></li>
+      <li><b>3</b><h3>Pronto</h3><p>Ela entra no mês, nos gráficos e no balanço da caixinha.</p></li>
+    </ol>
+  </section>
+
+  <section id="recursos">
+    <h2>Tudo o que você precisa para controlar os gastos</h2>
+    <div class="recursos">
+      <article>
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM21 14v.01M14 21h.01M17 21h4v-4"/></svg>
+        <h3>Cupom pelo QR Code</h3>
+        <p>Pela câmera, por uma foto da galeria ou pela nota em PDF das compras online.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 24 24"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>
+        <h3>Categorias que aprendem</h3>
+        <p>Cada item vai para a sua categoria. Corrigiu uma vez, o app lembra das próximas.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 15h3"/></svg>
+        <h3>Parceladas e fixas</h3>
+        <p>Aluguel, luz, assinaturas e compras parceladas entram sozinhas nos meses seguintes.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 24 24"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+        <h3>Caixinhas separadas</h3>
+        <p>Casa, viagem, empresa: cada caixinha com os seus gastos e os seus gráficos.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.6a5 5 0 0 1 5.5 5.4"/></svg>
+        <h3>Contas divididas</h3>
+        <p>Convide quem divide com você, diga quem pagou, e o balanço mostra quem deve a quem.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 24 24"><path d="M3 21h18M6 17v-6M11 17V5M16 17v-9M21 17v-4"/></svg>
+        <h3>Gráficos do mês e do ano</h3>
+        <p>Por categoria, por estabelecimento e por produto, para ver onde dá para economizar.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="dividir">
+    <div>
+      <h2>Dividir a conta sem planilha</h2>
+      <p>Coloque na caixinha quem mora com você ou quem vai na viagem. Cada um lança do próprio celular, o
+        app soma tudo e mostra o caminho mais curto para ficar quite.</p>
+      <p>Pagou só uma parte? Marque o valor que foi pago e o resto continua no balanço.</p>
+    </div>
+    <div class="balanco" aria-hidden="true">
+      <h3>Balanço · Viagem</h3>
+      <div class="linha"><span class="avatar" style="--c:#3B7DD8">A</span><span>Ana deve a <b>Pedro</b></span><b class="valor">R$ 84,50</b></div>
+      <div class="linha"><span class="avatar" style="--c:#B456C8">L</span><span>Lia deve a <b>Pedro</b></span><b class="valor">R$ 31,20</b></div>
+      <div class="linha quite"><span class="avatar" style="--c:#E69A28">J</span><span>João está quite</span><b class="valor">✓</b></div>
+      <div class="balanco-botao">Marcar como pago</div>
+    </div>
+  </section>
+
+  <section class="confianca">
+    <h2>Seus dados, do seu jeito</h2>
+    <div class="recursos">
+      <article>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><path d="M3 3l18 18"/></svg>
+        <h3>Sem cadastro</h3>
+        <p>É abrir e usar. Se quiser, proteja a conta com o seu e-mail para recuperar tudo num celular novo.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 24 24"><path d="M2 8.5a15 15 0 0 1 20 0M5 12a10 10 0 0 1 14 0M8.5 15.5a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/></svg>
+        <h3>Funciona sem internet</h3>
+        <p>Tudo fica no celular e sincroniza com a caixinha quando a conexão voltar.</p>
+      </article>
+      <article>
+        <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+        <h3>Sem anúncios, sem venda de dados</h3>
+        <p>As notas só ajudam um banco de preços anônimo, sem nome, CPF ou e-mail, se você deixar.</p>
+      </article>
+    </div>
+    <p class="link-politica"><a href="privacidade.html">Leia a política de privacidade →</a></p>
+  </section>
 </main>
+
+<footer class="rodape">
+  <a class="marca" href="./"><img src="icone.svg" alt="" width="28" height="28"> Nossa Caixinha</a>
+  <nav>
+    <a href="privacidade.html">Política de privacidade</a>
+    <a href="excluir-conta.html">Excluir sua conta</a>
+  </nav>
+</footer>
 </body>
 </html>
